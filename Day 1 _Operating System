@@ -1,4 +1,4 @@
-## Input Output buffering and its Various Techniques
+## Input Output buffering and its Various Techniques ##
 
 A buffer is a memory area that stores data being transferred between two devices or between a device and an application.
 
@@ -23,7 +23,6 @@ After taking the input, the block gets transferred to the user space by the proc
 Two blocks works simultaneously, when one block of data is processed by the user process, the next block is being read in.
 OS can swap the processes.
 OS can record the data of system buffer to user processes.
-
 Stream oriented device –
 Line- at a time operation is used for scroll made terminals. User inputs one line at a time, with a carriage return signaling at the end of a line.
 Byte-at a time operation is used on forms mode, terminals when each keystroke is significant.
@@ -37,7 +36,6 @@ Other buffer is used to store data from the lower level module.
 Double buffering is also known as buffer swapping.
 A major disadvantage of double buffering is that the complexity of the process get increased.
 If the process performs rapid bursts of I/O, then using double buffering may be deficient.
-
 Stream oriented –
 Line- at a time I/O, the user process need not be suspended for input or output, unless process runs ahead of the double buffer.
 Byte- at a time operations, double buffer offers no advantage over a single buffer of twice the length.
