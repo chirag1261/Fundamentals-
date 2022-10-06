@@ -1,0 +1,16 @@
+Spooling - It is a kind of buffering mechanism or a process in which data is temporarily held to be used and executed by a device, program or the system. 
+Data is sent to and stored in memory or other volatile storage until the program or computer requests it for execution.
+
+In a computer system peripheral equipments, such as printers and punch card readers, etc. 
+They are very slow relative to the performance of the rest of the system. Getting input and output from the system was quickly seen to be a bottleneck. 
+Here comes the need for spool.
+
+Spooling works like a typical request queue where data, instructions and processes from multiple sources are accumulated for execution later on. Generally, 
+It is maintained on computer’s physical memory, buffers or the I/O device-specific interrupts. 
+The spool is processed in FIFO manner i.e. whatever first instruction is there in the queue will be popped and executed.
+
+Advantages of Spooling:-
+
+Since there is no interaction of I/O devices with CPU, so the CPU need not wait for the I/O operation to take place. The I/O operations take a large amount of time.
+The CPU is kept busy most of the time and hence it is not in the idle state which is good to have a situation.
+More than one I/O devices can work simultaneously.
