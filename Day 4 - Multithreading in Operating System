@@ -1,0 +1,10 @@
+Multithreading in Operating System
+
+A thread is a path which is followed during a program’s execution. 
+Majority of programs written now a days run as a single thread.Lets say, for example a program is not capable of reading keystrokes while making drawings. 
+These tasks cannot be executed by the program at the same time. This problem can be solved through multitasking so that two or more tasks can be executed simultaneously.
+Multitasking is of two types: Processor based and thread based. 
+Processor based multitasking is totally managed by the OS, however multitasking through multithreading can be controlled by the programmer to some extent.
+The concept of multi-threading needs proper understanding of these two terms – a process and a thread.
+A process is a program being executed. A process can be further divided into independent units known as threads.
+A thread is like a small light-weight process within a process. Or we can say a collection of threads is what is known as a process.
