@@ -1,0 +1,54 @@
+Query Processing is the activity performed in extracting data from the database. In query processing, it takes various steps for fetching the data from the database. 
+The steps involved are:
+
+Parsing and translation
+Optimization
+Evaluation
+
+The query processing works in the following way:
+Parsing and Translation
+
+As query processing includes certain activities for data retrieval. Initially, the given user queries get translated in high-level database languages such as SQL.
+It gets translated into expressions that can be further used at the physical level of the file system. 
+After this, the actual evaluation of the queries and a variety of query -optimizing transformations and takes place. 
+Thus before processing a query, a computer system needs to translate the query into a human-readable and understandable language. 
+Consequently, SQL or Structured Query Language is the best suitable choice for humans. But, it is not perfectly suitable for the internal representation of the query to 
+the system. Relational algebra is well suited for the internal representation of a query. The translation process in query processing is similar to the parser of a query. 
+When a user executes any query, for generating the internal form of the query, the parser in the system checks the syntax of the query, verifies the name of the relation in 
+the database, the tuple, and finally the required attribute value. The parser creates a tree of the query, known as 'parse-tree.' Further, translate it into the form of
+relational algebra. With this, it evenly replaces all the use of the views when used in the query.
+
+Suppose a user executes a query. As we have learned that there are various methods of extracting the data from the database. In SQL, a user wants to fetch the records of the 
+employees whose salary is greater than or equal to 10000. For doing this, the following query is undertaken:
+
+select emp_name from Employee where salary>10000;
+
+Thus, to make the system understand the user query, it needs to be translated in the form of relational algebra. We can bring this query in the relational algebra form as:
+
+    σsalary>10000 (πsalary (Employee))
+    πsalary (σsalary>10000 (Employee))
+
+After translating the given query, we can execute each relational algebra operation by using different algorithms. So, in this way, a query processing begins its working.
+
+Evaluation
+For this, with addition to the relational algebra translation, it is required to annotate the translated relational algebra expression with the instructions used for 
+specifying and evaluating each operation. Thus, after translating the user query, the system executes a query evaluation plan.
+Query Evaluation Plan
+
+ In order to fully evaluate a query, the system needs to construct a query evaluation plan.
+ The annotations in the evaluation plan may refer to the algorithms to be used for the particular index or the specific operations.
+ Such relational algebra with annotations is referred to as Evaluation Primitives. The evaluation primitives carry the instructions needed for the evaluation of the 
+ operation.
+ Thus, a query evaluation plan defines a sequence of primitive operations used for evaluating a query. The query evaluation plan is also referred to as the query execution
+ plan.
+ A query execution engine is responsible for generating the output of the given query. It takes the query execution plan, executes it, and finally makes the output for the 
+ user query.
+
+Optimization
+The cost of the query evaluation can vary for different types of queries. Although the system is responsible for constructing the evaluation plan, the user does need not to 
+write their query efficiently.
+Usually, a database system generates an efficient query evaluation plan, which minimizes its cost. This type of task performed by the database system and is known as Query 
+Optimization.
+For optimizing a query, the query optimizer should have an estimated cost analysis of each operation. It is because the overall operation cost depends on the memory 
+allocations to several operations, execution costs, and so on.
+Finally, after selecting an evaluation plan, the system evaluates the query and produces the output of the query.
