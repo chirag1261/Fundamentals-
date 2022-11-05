@@ -1,0 +1,18 @@
+What is Interrupt in OS?
+
+An interrupt is a signal emitted by hardware or software when a process or an event needs immediate attention. It alerts the processor to a high-priority process requiring 
+interruption of the current working process. In I/O devices, one of the bus control lines is dedicated for this purpose and is called the Interrupt Service Routine (ISR).
+
+When a device raises an interrupt at the process, the processor first completes the execution of an instruction. Then it loads the Program Counter (PC) with the address of 
+the first instruction of the ISR. Before loading the program counter with the address, the address of the interrupted instruction is moved to a temporary location. Therefore, 
+after handling the interrupt, the processor can continue with the process.
+While the processor is handling the interrupts, it must inform the device that its request has been recognized to stop sending the interrupt request signal. Also, saving the 
+registers so that the interrupted process can be restored in the future increases the delay between the time an interrupt is received and the start of the execution of the 
+ISR. This is called Interrupt Latency.
+A single computer can perform only one computer instruction at a time. But, because it can be interrupted, it can manage how programs or sets of instructions will be
+performed. This is known as multitasking. It allows the user to do many different things simultaneously, and the computer turns to manage the programs that the user starts.
+Of course, the computer operates at speeds that make it seem like all user tasks are being performed simultaneously.
+An operating system usually has some code that is called an interrupt handler. The interrupt handler prioritizes the interrupts and saves them in a queue if more than one is
+waiting to be handled. The operating system has another little program called a scheduler that figures out which program to control next.
+Types of Interrupt
+Interrupt signals may be issued in response to hardware or software events. These are classified as hardware interrupts or software interrupts, respectively.
