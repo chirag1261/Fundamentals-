@@ -1,0 +1,45 @@
+What is Kernel?
+
+In computer science, Kernel is a computer program that is a core or heart of an operating system. Before discussing kernel in detail, let's first understand its basic, i.e.,
+Operating system in a computer.
+
+Operating System
+
+An operating system or OS is system software that works as an interface between hardware components and end-user. It enables other programs to run. Each computer system, 
+whether it is desktop, laptop, tablet, or smartphone, all must have an OS to provide basic functionalities for the device. Some widely used operating systems are Windows, Linux, MacOS, Android, iOS, etc.
+What is Kernel in Operating System?
+What is Kernel
+
+    As discussed above, Kernel is the core part of an OS(Operating system); hence it has full control over everything in the system. Each operation of hardware and software 
+    is managed and administrated by the kernel.
+    It acts as a bridge between applications and data processing done at the hardware level. It is the central component of an OS.
+    It is the part of the OS that always resides in computer memory and enables the communication between software and hardware components.
+    It is the computer program that first loaded on start-up the system (After the bootloader). Once it is loaded, it manages the remaining start-ups. It also manages memory,
+    peripheral, and I/O requests from software. Moreover, it translates all I/O requests into data processing instructions for the CPU. It manages other tasks also such as
+    memory management, task management, and disk management.
+    A kernel is kept and usually loaded into separate memory space, known as protected Kernel space. It is protected from being accessed by application programs or less 
+    important parts of OS.
+    Other application programs such as browser, word processor, audio & video player use separate memory space known as user-space.
+    Due to these two separate spaces, user data and kernel data don't interfere with each other and do not cause any instability and slowness.
+
+Functions of a Kernel
+
+A kernel of an OS is responsible for performing various functions and has control over the system. Some main responsibilities of Kernel are given below:
+
+    Device Management
+    To perform various actions, processes require access to peripheral devices such as a mouse, keyboard, etc., that are connected to the computer. A kernel is responsible 
+    for controlling these devices using device drivers. Here, a device driver is a computer program that helps or enables the OS to communicate with any hardware device.
+    A kernel maintains a list of all the available devices, and this list may be already known, configured by the user, or detected by OS at runtime.
+    Memory Management
+    The kernel has full control for accessing the computer's memory. Each process requires some memory to work, and the kernel enables the processes to safely access the 
+    memory. To allocate the memory, the first step is known as virtual addressing, which is done by paging or segmentation. Virtual addressing is a process of providing 
+    virtual address spaces to the processes. This prevents the application from crashing into each other.
+    Resource Management
+    One of the important functionalities of Kernel is to share the resources between various processes. It must share the resources in a way that each process uniformly 
+    accesses the resource.
+    The kernel also provides a way for synchronization and inter-process communication (IPC). It is responsible for context switching between processes.
+    Accessing Computer Resources
+    A kernel is responsible for accessing computer resources such as RAM and I/O devices. RAM or Random-Access Memory is used to contain both data and instructions. 
+    Each program needs to access the memory to execute and mostly wants more memory than the available. For such a case, Kernel plays its role and decides which memory each 
+    process will use and what to do if the required memory is not available.
+    The kernel also allocates the request from applications to use I/O devices such as keyboards, microphones, printers, etc.
