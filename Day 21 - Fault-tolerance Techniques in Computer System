@@ -1,0 +1,34 @@
+Fault-tolerance is the process of working of a system in a proper way in spite of the occurrence of the failures in the system. Even after performing the so many testing
+processes there is possibility of failure in system. Practically a system can’t be made entirely error free. hence, systems are designed in such a way that in case of error 
+availability and failure, system does the work properly and given correct result.
+
+Any system has two major components – Hardware and Software. Fault may occur in either of it. So there are separate techniques for fault-tolerance in both hardware and software.
+
+Hardware Fault-tolerance Techniques:
+Making a hardware fault-tolerance is simple as compared to software. Fault-tolerance techniques make the hardware work proper and give correct result even some fault occurs in
+the hardware part of the system. There are basically two techniques used for hardware fault-tolerance:
+
+    BIST –
+BIST stands for Build in Self Test. System carries out the test of itself after a certain period of time again and again, that is BIST technique for hardware fault-tolerance. 
+When system detects a fault, it switches out the faulty component and switches in the redundant of it. System basically reconfigure itself in case of  fault occurrence.
+    TMR –
+TMR is Triple Modular Redundancy. Three redundant copies of critical components are generated and all these three copies are run concurrently. Voting of result of all 
+redundant copies are done and majority result is selected. It can tolerate the occurrence of a single fault at a time.
+
+Software Fault-tolerance Techniques:
+Software fault-tolerance techniques are used to make the software reliable in the condition of fault occurrence and failure. There are three techniques used in software 
+fault-tolerance. First two techniques are common and are basically an adaptation of hardware fault-tolerance techniques.
+
+    N-version Programming –
+    In N-version programming, N versions of software are developed by N individuals or groups of developers. N-version programming is just like TMR in hardware fault-tolerance
+    technique. In N-version programming, all the redundant copies are run concurrently and result obtained is different from each processing. The idea of n-version programming
+    is basically to get the all errors during development only.
+
+    Recovery Blocks –
+    Recovery blocks technique is also kike the n-version programming but in recovery blocks technique, redundant copies are generated using different algorithms only. In 
+    recovery block, all the redundant copies are not run concurrently and these copies are run one by one. Recovery block technique can only be used where the task deadlines 
+    are more than task computation time.
+
+    Check-pointing and Rollback Recovery –
+    This technique is different from above two techniques of software fault-tolerance. In this technique, system is tested each time when we perform some computation. This
+    techniques is basically useful when there is processor failure or data corruption.
