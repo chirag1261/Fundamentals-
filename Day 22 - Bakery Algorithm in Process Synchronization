@@ -1,0 +1,54 @@
+Prerequisite – Critical Section, Process Synchronization, Inter Process Communication
+
+The Bakery algorithm is one of the simplest known solutions to the mutual exclusion problem for the general case of N process. Bakery Algorithm is a critical section solution
+for N processes. The algorithm preserves the first come first serve property.
+
+    Before entering its critical section, the process receives a number. Holder of the smallest number enters the critical section.
+    If processes Pi and Pj receive the same number,
+
+    if i < j 
+    Pi is served first; 
+    else 
+    Pj is served first.
+
+    The numbering scheme always generates numbers in increasing order of enumeration; i.e., 1, 2, 3, 3, 3, 3, 4, 5, …
+
+Notation – lexicographical order (ticket #, process id #) – Firstly the ticket number is compared. If same then the process ID is compared next, i.e.-
+
+– (a, b) < (c, d) if a < c or if a = c and b < d
+– max(a [0], . . ., a [n-1]) is a number, k, such that k >= a[i]  for i = 0, . . ., n - 1
+
+Shared data – choosing is an array [0..n – 1] of boolean values; & number is an array [0..n – 1] of integer values. Both are initialized to False & Zero respectively.
+
+Algorithm Pseudocode –
+
+repeat
+    choosing[i] := true;
+    number[i] := max(number[0], number[1], ..., number[n - 1])+1;
+    choosing[i] := false;
+    for j := 0 to n - 1
+        do begin
+            while choosing[j] do no-op;
+            while number[j] != 0
+                and (number[j], j) < (number[i], i) do no-op;
+        end;
+
+        critical section
+    
+    number[i] := 0;
+    
+        remainder section
+
+until false;
+
+Explanation –
+Firstly the process sets its “choosing” variable to be TRUE indicating its intent to enter critical section. Then it gets assigned the highest ticket number corresponding to
+other processes. Then the “choosing” variable is set to FALSE indicating that it now has a new ticket number. This is in-fact the most important and confusing part of the
+algorithm.
+
+It is actually a small critical section in itself ! The very purpose of the first three lines is that if a process is modifying its TICKET value then at that time some other
+process should not be allowed to check its old ticket value which is now obsolete. This is why inside the for loop before checking ticket value we first make sure that all 
+other processes have the “choosing” variable as FALSE.
+
+After that we proceed to check the ticket values of processes where process with least ticket number/process id gets inside the critical section. The exit section just resets
+the ticket value to zero.
