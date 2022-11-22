@@ -1,0 +1,31 @@
+The main memory should oblige both the operating system and the different client processes.  Therefore, the allocation of memory becomes an important task in the operating 
+system.  The memory is usually divided into two partitions: one for the resident operating system and one for the user processes. We normally need several user processes to 
+reside in memory simultaneously. Therefore, we need to consider how to allocate available memory to the processes that are in the input queue waiting to be brought into memory.
+In adjacent memory allotment, each process is contained in a single contiguous segment of memory.  
+
+ Memory allocation:
+
+To gain proper memory utilization, memory allocation must be allocated efficient manner. One of the simplest methods for allocating memory is to divide memory into several 
+fixed-sized partitions and each partition contains exactly one process. Thus, the degree of multiprogramming is obtained by the number of partitions. 
+Multiple partition allocation: In this method, a process is selected from the input queue and loaded into the free partition. When the process terminates, the partition
+becomes available for other processes. 
+
+Fixed partition allocation: In this method, the operating system maintains a table that indicates which parts of memory are available and which are occupied by processes. 
+Initially, all memory is available for user processes and is considered one large block of available memory. This available memory is known as a “Hole”. When the process 
+arrives and needs memory, we search for a hole that is large enough to store this process. If the requirement is fulfilled then we allocate memory to process, otherwise 
+keeping the rest available to satisfy future requests. While allocating a memory sometimes dynamic storage allocation problems occur, which concerns how to satisfy a request 
+of size n from a list of free holes. There are some solutions to this problem:
+
+First fit:- 
+In the first fit, the first available free hole fulfills the requirement of the process allocated. 
+Here, in this diagram 40 KB memory block is the first available free hole that can store process A (size of 25 KB), because the first two blocks did not have sufficient memory
+space.
+
+Best fit:-
+In the best fit, allocate the smallest hole that is big enough to process requirements. For this, we search the entire list, unless the list is ordered by size. 
+Here in this example, first, we traverse the complete list and find the last hole 25KB is the best suitable hole for Process A(size 25KB).
+In this method memory utilization is maximum as compared to other memory allocation techniques.
+
+Worst fit:-In the worst fit, allocate the largest available hole to process. This method produces the largest leftover hole. 
+Here in this example, Process A (Size 25 KB) is allocated to the largest available memory block which is 60KB. Inefficient memory utilization is a major issue in the worst 
+fit.
