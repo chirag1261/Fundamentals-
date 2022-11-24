@@ -1,0 +1,58 @@
+A computer network is a group of computers that use a set of common communication protocols over digital interconnections for the purpose of sharing resources located on or 
+provided by the network nodes. With respect to the Computer Knowledge section in the major Government exams conducted, the Computer Networking forms an extremely important 
+topic and questions are frequently asked from this concept. 
+In this article, we bring to you the detailed information about the different types of Computer networks, their definition and functions along with the different types of 
+node devices.
+
+What is a Computer Network?
+
+Before moving forward with the article and learning more about the types of computer networks, it is important for candidates to understand what is a network and how it 
+affects the functioning of one or more computers connected with each other. 
+
+Definition – A group of computers which are connected to each other and follow similar usage protocols for the purpose of sharing information and having communications 
+provided by the networking nodes is called a Computer Network. 
+
+A network may be small where it may include just one system or maybe as large as what one may want. The nodes may further be classified into various types. These include:
+
+    Personal Computers
+    Servers
+    Networking Hardware
+    General Hosts
+
+Networking can be classified into three types:
+
+    Types of Computer Networks
+    Topology
+    Interpreters
+    
+    Types of Computer Networks
+
+There are five main types of Computer  Networks:
+
+    LAN (Local Area Network) – 
+        Systems connected in a small network like in a building or a small office
+        It is inexpensive
+        It uses Ethernet or Token-ring technology
+        Two or more personal computers can be connected through wires or cables acting as nodes
+        Transfer of data is fast and is highly score
+    PAN (Personal Area Network) – 
+        The smallest computer network
+        Devices may be connected through Bluetooth or other infra-red enables devices
+        It has a connectivity range of upto 10 metres
+        It covers an area of upto 30 feet
+        Personal devices belonging to a single person can be connected to each other using PAN
+    MAN (Metropolitan Area Network) – 
+        A network that can be connected within a city, for example, cable TV Connection
+        It can be in the form of Ethernet, ATM, Token-ring and FDDI
+        It has a higher range
+        This type of network can be used to connect citizens with the various Organisations
+    WAN (Wide Area Network) – 
+        A network which covers over a country or a larger range of people
+        Telephonic lines are also connected through WAN
+        Internet is the biggest WAN in the world
+        Mostly used by Government Organisations to manage data and information
+    VPN (Virtual Private Network): – 
+        A network which is constructed by using public wires to connect to a private network
+        There are a number of systems which enable you to create networks using the Internet as a medium for transporting data
+        These systems use encryptions and other security mechanisms to ensure only authorised users can access
+
