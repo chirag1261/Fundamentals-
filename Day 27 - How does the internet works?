@@ -1,0 +1,28 @@
+The actual working of the internet takes place with the help of clients and servers. Here the client is a laptop that is directly connected to the internet and servers are the
+computers connected indirectly to the Internet and they are having all the websites stored in those large computers. These servers are connected to the internet with the help
+of ISP (Internet Service Providers) and will be identified with the IP address. Each website has its Domain name as it is difficult for any person to always remember the long 
+numbers or strings. So, whenever you search any domain name in the search bar of the browser the request will be sent to the server and that server will try to find the IP 
+address from the Domain name because it cannot understand the domain name. After getting the IP address the server will try to search the IP address of the Domain name in a 
+Huge phone directory that in networking is known as a DNS server (Domain Name Server). For example, if we have the name of a person and you can easily find the Aadhaar number
+of him/her from the long directory as simple as that.
+
+So after getting the IP address the browser will pass on the further request to the respective server and now the server will process the request to display the content of 
+the website which the client wants. If you are using a wireless medium of Internet like 3g and 4g or other mobile data then the data will start flowing from the optical cables
+and will first reach to towers from there the signals will reach your cell phones and Pc’s through electromagnetic waves. And if you are using routers then optical fiber 
+connecting to your router will help in connecting those light-induced signals into electrical signals and with the help of ethernet cables internet reaches your computers and
+hence the required information. 
+What is an IP address?
+
+IP address stands for internet protocol address. Every PC/Local machine is having an IP address and that IP address is provided by the Internet Service Providers (ISP’s). 
+These are some sets of rules which govern the flow of data whenever a device is connected to the Internet. It differentiates computers, websites, and routers. Just like human
+identification cards like Aadhaar cards, Pan cards, or any other unique identification documents. Every laptop and desktop has its own unique IP address for identification. 
+It’s an important part of internet technology. An IP address is displayed as a set of four-digit like 192.154.3.29. Here each number on the set ranges from 0 to 255. Hence, 
+the total IP address range from 0.0.0.0 to 255.255.255.255. 
+
+You can check the IP address of your Laptop or desktop by clicking on the windows start menu ->then right click and go to network ->in that go to status and then Properties 
+their you can see the IP address. There are four different types of IP addresses are available:
+
+    Static IP address
+    Dynamic IP address
+    Private IP address
+    Public IP address
