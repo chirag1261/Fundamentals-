@@ -1,0 +1,37 @@
+Splay trees are the self-balancing or self-adjusted binary search trees. In other words, we can say that the splay trees are the variants of the binary search trees. The 
+prerequisite for the splay trees that we should know about the binary search trees.
+
+As we already know, the time complexity of a binary search tree in every case. The time complexity of a binary search tree in the average case is O(logn) and the time 
+complexity in the worst case is O(n). In a binary search tree, the value of the left subtree is smaller than the root node, and the value of the right subtree is greater than
+the root node; in such case, the time complexity would be O(logn). If the binary tree is left-skewed or right-skewed, then the time complexity would be O(n). To limit the
+skewness, the AVL and Red-Black tree came into the picture, having O(logn) time complexity for all the operations in all the cases. We can also improve this time complexity 
+by doing more practical implementations, so the new Tree data structure was designed, known as a Splay tree.
+What is a Splay Tree?
+
+A splay tree is a self-balancing tree, but AVL and Red-Black trees are also self-balancing trees then. What makes the splay tree unique two trees. It has one extra property 
+that makes it unique is splaying.
+
+A splay tree contains the same operations as a Binary search tree, i.e., Insertion, deletion and searching, but it also contains one more operation, i.e., splaying. So. all 
+the operations in the splay tree are followed by splaying.
+
+Splay trees are not strictly balanced trees, but they are roughly balanced trees. Let's understand the search operation in the splay-tree.
+Rotations
+
+There are six types of rotations used for splaying:
+
+    Zig rotation (Right rotation)
+    Zag rotation (Left rotation)
+    Zig zag (Zig followed by zag)
+    Zag zig (Zag followed by zig)
+    Zig zig (two right rotations)
+    Zag zag (two left rotations)
+
+Factors required for selecting a type of rotation
+
+The following are the factors used for selecting a type of rotation:
+
+    Does the node which we are trying to rotate have a grandparent?
+    Is the node left or right child of the parent?
+    Is the node left or right child of the grandparent?
+
+
